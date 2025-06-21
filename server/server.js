@@ -1,41 +1,31 @@
 const express = require('express');
-const next = require('next');
 const path = require('path');
+const cors = require('cors');
 
-// Determine if the environment is development or production
-const dev = process.env.NODE_ENV !== 'production';
-
-// Create a Next.js app instance. 
-// We point it to the 'client' directory where your Next.js project lives.
-const app = next({ dev, dir: path.join(__dirname, '../client') });
-
-// Get the Next.js request handler
-const handle = app.getRequestHandler();
-
-// Use the port defined by Azure App Service, or 3000 for local development
+const app = express();
 const port = process.env.PORT || 3000;
 
-app.prepare().then(() => {
-  // Once Next.js is ready, create the Express server
-  const server = express();
+// It's good practice to enable CORS
+app.use(cors());
 
-  // This is where you could add custom Express API routes if you needed them.
-  // For example:
-  // server.get('/api/health', (req, res) => {
-  //   res.json({ status: 'ok' });
-  // });
+// This is where you can add any custom API routes you might need in the future.
+// For example:
+// app.get('/api/health', (req, res) => {
+//   res.json({ status: 'ok' });
+// });
 
-  // For all other requests, let the Next.js request handler deal with them
-  server.all('*', (req, res) => {
-    return handle(req, res);
-  });
+// Serve the static files from the Vite-React app's build directory
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
-  // Start the Express server
-  server.listen(port, (err) => {
-    if (err) throw err;
-    console.log(`> Ready on http://localhost:${port}`);
-  });
-}).catch(err => {
-  console.error('Error starting server', err);
-  process.exit(1);
+// This catch-all route is crucial for a Single-Page Application (SPA).
+// It ensures that any direct navigation to a client-side route (e.g., yourdomain.com/features)
+// will serve the main index.html file, allowing the React router to handle the page rendering.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
+});
+
+// Start the Express server
+app.listen(port, (err) => {
+  if (err) throw err;
+  console.log(`> Ready on http://localhost:${port}`);
 });

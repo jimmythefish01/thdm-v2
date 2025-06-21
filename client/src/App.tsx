@@ -522,8 +522,8 @@ export default function Component() {
               Transform Your Health Data Warehouse <span className="text-pink-600">Overnight</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We handle the heavy lifting of getting your data ready for AI. Make sense of complex claims processing
-              data across both life and health lines with 1000+ standardized data attributes across 9 comprehensive domains.
+              Complete health data metastore for health insurance providers. Make sense of complex claims processing
+              data with 1000+ standardized data attributes across 9 comprehensive domains.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -597,6 +597,75 @@ export default function Component() {
                 </DialogContent>
               </Dialog>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Metadata Driven Framework Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-gray-800 to-slate-900 bg-red-200">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Metadata Driven Framework</h2>
+            <p className="text-xl text-gray-300 font-medium">The unfair advantage you've been looking for.</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+            {/* Block 1 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Stop Building Brittle Data Pipelines.
+              </h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Hard-coded, custom data pipelines are a bottleneck. They're slow to build, difficult to maintain, and
+                impossible to scale. It's time to move beyond this outdated model.
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                A metadata-driven ETL framework is your solution for building a data platform that is dynamic, scalable,
+                and built for the future. By using metadata to control and manage the flow of data, you fundamentally
+                change how you work. The result? Drastically streamlined processes, enhanced reusability, and rock-solid
+                consistency across your entire data landscape.
+              </p>
+            </div>
+
+            {/* Block 2 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4">Automate, Don't Recreate.</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                At its heart, this framework uses control tables to define everything—sources, targets, transformations,
+                and quality checks. This centralization allows you to build generic, reusable ETL jobs that read
+                instructions from the metadata and execute flawlessly.
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                Stop writing custom code for every new data source. With a metadata-driven approach, you slash
+                development time and free your engineers to focus on high-value initiatives instead of repetitive
+                coding.
+              </p>
+            </div>
+
+            {/* Block 3 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Raw Data to Business-Ready — systematically.
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Built on the proven Lakehouse architecture, this framework guides data seamlessly from its raw state
+                (bronze), through validation (silver), and into business-ready aggregated insights (gold). Metadata
+                governs this entire journey, enforcing data quality and transformation rules at every step. Any records
+                that fail quality checks are automatically quarantined for review, guaranteeing the integrity and
+                reliability your business demands.
+              </p>
+            </div>
+
+            {/* Block 4 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4">Robust Governance with a Bulletproof Audit Trail</h3>
+              <p className="text-gray-300 leading-relaxed">
+                In a world of tightening regulations, you can't afford uncertainty. This framework delivers complete
+                data governance and traceability. Every ETL job is logged and tied to its metadata, providing a clear,
+                indisputable audit trail of your data's entire lifecycle. Paired with tools like Unity Catalog, you gain
+                a unified, secure, and compliant view of every data asset you own.
+              </p>
+            </div>
           </div>
         </div>
       </section>

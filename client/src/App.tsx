@@ -295,31 +295,188 @@ export default function Component() {
       title: "1000+ Data Attributes",
       description: "Comprehensive coverage of health insurance data elements with detailed metadata",
       icon: Database,
+      detailedContent: {
+        headline: "Beyond Comprehensive Coverage—It's Your Complete Health Data Universe.",
+        description:
+          "Our model isn't just extensive; it's intelligently designed with over 1000 attributes that span the entire healthcare journey. We've gone beyond the basics to include the granular details that drive real-world insights, ensuring you can answer the complex questions of tomorrow, today.",
+        features: [
+          {
+            title: "360-Degree View",
+            description:
+              "Encompasses everything from patient demographics and clinical encounters to complex claims adjudication, provider networks, and financial transactions.",
+          },
+          {
+            title: "Ready for Advanced Analytics",
+            description:
+              "Includes key pipeline audit attributes (e.g., record_load_date, source_file_name) for unparalleled data lineage and trust, right out of the box.",
+          },
+          {
+            title: "Future-Proof by Design",
+            description:
+              "Attributes are organized to support emerging needs like value-based care analysis, population health segmentation, and operational efficiency reporting without requiring a model redesign.",
+          },
+          {
+            title: "Implementation Advantage",
+            description:
+              "Our services don't just hand you a model; we meticulously map your unique source systems to this rich attribute set. We identify gaps and provide strategies to enrich your data, ensuring you leverage the full power of the model from day one.",
+          },
+        ],
+      },
     },
     {
       title: "Column Descriptions",
       description: "Clear, standardized descriptions for every data element in your warehouse",
       icon: FileText,
+      detailedContent: {
+        headline: "Clarity That Accelerates—Your Built-In Business Glossary.",
+        description:
+          "Ambiguous data is unusable data. We provide clear, standardized, and business-friendly descriptions for every single data element, transforming your data warehouse from a technical puzzle into an accessible, self-service resource for your entire organization.",
+        features: [
+          {
+            title: "Democratize Your Data",
+            description:
+              "Empower business analysts and stakeholders to understand and utilize data with confidence, dramatically reducing their reliance on IT and data engineering teams.",
+          },
+          {
+            title: 'Eliminate "Tribal Knowledge"',
+            description:
+              "The meaning of your data is no longer stored in a few experts' heads. It's documented, standardized, and centrally available, ensuring consistency across all reports and analyses.",
+          },
+          {
+            title: "Onboard Teams Faster",
+            description:
+              "New analysts and developers can become productive in days, not months. Our clear definitions serve as the ultimate guide to understanding your data landscape.",
+          },
+          {
+            title: "Implementation Advantage",
+            description:
+              "During implementation, we work with your teams to customize and extend these descriptions, incorporating your organization's specific terminology and business rules. This creates a truly bespoke data dictionary that speaks your company's language.",
+          },
+        ],
+      },
     },
     {
       title: "Join Descriptors",
       description: "Detailed relationship mapping between tables and data entities",
       icon: ArrowRight,
+      detailedContent: {
+        headline: "Intelligence in Every Connection—Pre-Built Logic for Flawless Queries.",
+        description:
+          "The true power of data lies in its relationships. Our model comes with detailed join descriptors that map the intricate connections between every table and entity. This isn't just documentation; it's the embedded logic that guarantees analytical accuracy.",
+        features: [
+          {
+            title: "Prevent Costly Errors",
+            description:
+              'By providing the pre-defined "how-to" for connecting data, we eliminate the guesswork that leads to incorrect queries, flawed reports, and poor business decisions.',
+          },
+          {
+            title: "Accelerate Report Development",
+            description:
+              "Your BI and analytics teams can build dashboards and reports at unprecedented speed. The complex work of figuring out how a claim connects to a member, a provider, and a clinical event is already done.",
+          },
+          {
+            title: "Uncover Deeper Insights",
+            description:
+              "Easily navigate complex relationships to perform sophisticated analysis, like tracking a patient's journey across multiple providers or analyzing the cost-effectiveness of a specific care pathway.",
+          },
+          {
+            title: "Implementation Advantage",
+            description:
+              "Our experts will help you validate these relationships against your specific operational workflows and customize them to reflect any unique business logic, ensuring a perfect fit for your analytical needs.",
+          },
+        ],
+      },
     },
     {
       title: "Referential Integrity",
       description: "Maintain data quality with built-in integrity constraints and validation",
       icon: Shield,
+      detailedContent: {
+        headline: "The Foundation of Trust—Engineered for Unshakable Data Quality.",
+        description:
+          'Trustworthy decisions require trustworthy data. Our model is architected with built-in referential integrity, using primary and foreign key constraints to ensure that your data remains logical, consistent, and clean. This is your guarantee against the "garbage in, garbage out" problem.',
+        features: [
+          {
+            title: "Ensure Reporting Accuracy",
+            description:
+              "Eliminate orphaned records and data drift that corrupt analytics. Know that every metric you report is backed by a verifiable and consistent data foundation.",
+          },
+          {
+            title: "Reduce Data Cleaning Overheads",
+            description:
+              "By enforcing quality at the database level, you drastically cut down the time your data engineers spend on manual data validation and cleaning tasks.",
+          },
+          {
+            title: "Build with Confidence",
+            description:
+              "Application developers and data scientists can build on top of your data warehouse with the assurance that the underlying relationships are sound and reliable.",
+          },
+          {
+            title: "Implementation Advantage",
+            description:
+              "We don't just enable these constraints; we provide a strategy for implementing them on your existing data. Our services include data profiling and cleansing strategies to help you achieve referential integrity without disrupting business operations.",
+          },
+        ],
+      },
     },
     {
       title: "Version Control",
       description: "Track changes and updates to your data model over time",
       icon: Zap,
+      detailedContent: {
+        headline: "Evolve with Confidence—A Future-Proof Model That Adapts to Change.",
+        description:
+          "The healthcare landscape is constantly changing, and your data model must be able to adapt. Our integrated version control allows you to track every change and update to the model over time, providing a complete audit trail and ensuring your data asset remains robust and relevant.",
+        features: [
+          {
+            title: "Seamless, Auditable Updates",
+            description:
+              "When business requirements or regulations (like new coding standards) change, you can update the model with a clear history of what changed, why, and when. This is critical for governance and compliance.",
+          },
+          {
+            title: "Risk-Free Development",
+            description:
+              "Test changes in a controlled manner. If an update causes issues, you can easily understand the impact or roll back to a previous stable version, ensuring business continuity.",
+          },
+          {
+            title: "Lower Total Cost of Ownership",
+            description:
+              "A manageable, version-controlled model is far easier and less costly to maintain and upgrade over its lifecycle than a static, brittle one.",
+          },
+          {
+            title: "Implementation Advantage",
+            description:
+              "Our implementation service includes establishing a governance framework for model changes. We'll help you set up a change management process that leverages the version control features to ensure your data model evolves in a controlled and documented way.",
+          },
+        ],
+      },
     },
     {
       title: "Example Data Values",
       description: "Sample data to help understand expected formats and ranges",
       icon: CheckCircle,
+      detailedContent: {
+        headline: "From Abstract to Actionable—Code Faster and with Greater Precision.",
+        description:
+          "Nothing slows down development like ambiguity. We provide curated sample data values for key columns to give your technical teams a crystal-clear understanding of expected formats, patterns, and ranges.",
+        features: [
+          {
+            title: "Eliminate Guesswork for Developers",
+            description:
+              'Is a gender field "M/F" or "Male/Female"? Does a date include the timestamp? Our sample values provide immediate, practical answers, reducing bugs and rework.',
+          },
+          {
+            title: "Validate Your ETL Processes",
+            description:
+              "Use the sample values as a baseline to test and validate your data loading and transformation logic, ensuring data lands in the warehouse exactly as expected.",
+          },
+          {
+            title: "Bridge the Business-Technical Divide",
+            description:
+              "Sample values make the data model tangible for everyone, helping stakeholders and developers confirm they are on the same page about what the data represents.",
+          },
+        ],
+      },
     },
   ]
 
@@ -365,8 +522,8 @@ export default function Component() {
               Transform Your Health Data Warehouse <span className="text-pink-600">Overnight</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Complete health data metastore for health insurance providers. Make sense of complex claims processing
-              data with 1000+ standardized data attributes across 9 comprehensive domains.
+              We handle the heavy lifting of getting your data ready for AI. Make sense of complex claims processing
+              data across both life and health lines with 1000+ standardized data attributes across 9 comprehensive domains.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -398,17 +555,47 @@ export default function Component() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-pink-200 rounded-lg flex items-center justify-center mb-4">
-                    <feature.icon className="w-6 h-6 text-pink-700" />
+              <Dialog
+                key={index}
+                open={openDialog === `feature-${index}`}
+                onOpenChange={(open) => setOpenDialog(open ? `feature-${index}` : null)}
+              >
+                <DialogTrigger asChild>
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all cursor-pointer transform hover:scale-105">
+                    <CardHeader>
+                      <div className="w-12 h-12 bg-pink-200 rounded-lg flex items-center justify-center mb-4">
+                        <feature.icon className="w-6 h-6 text-pink-700" />
+                      </div>
+                      <CardTitle className="text-xl">{feature.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-gray-600">{feature.description}</CardDescription>
+                    </CardContent>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-bold text-gray-900 mb-2">{feature.title}</DialogTitle>
+                    <DialogDescription className="text-lg text-pink-600 font-semibold">
+                      {feature.detailedContent.headline}
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="space-y-6 mt-6">
+                    <div>
+                      <p className="text-gray-600 text-base leading-relaxed">{feature.detailedContent.description}</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      {feature.detailedContent.features.map((item, itemIndex) => (
+                        <div key={itemIndex} className="bg-pink-50 p-4 rounded-lg border-l-4 border-pink-500">
+                          <h4 className="font-semibold text-gray-900 mb-2">{item.title}</h4>
+                          <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-600">{feature.description}</CardDescription>
-                </CardContent>
-              </Card>
+                </DialogContent>
+              </Dialog>
             ))}
           </div>
         </div>
